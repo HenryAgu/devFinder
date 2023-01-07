@@ -1,6 +1,49 @@
-/* .darkmode{
-    color: #8D8F9B;
+/* Rowdies Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+/* Dark theme code */
+.darkmode{
+    color: #BDD5E4;
     height: 100vh;
     background-color: #111624;
+    font-family: 'Rowdies', cursive;
     transition: background-color 0.25s ease-in-out;
-} */
+}
+
+/* Light theme code */
+.lightmode{
+    color: #333;
+    height: 100vh;
+    background-color: fff;
+    font-family: 'Rowdies', cursive;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.git_card_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.git_card{
+    width: 40%;
+    margin: 0 auto;
+}
+
+/* Github header section */
+.card_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo p{
+    font-size: 25px;
+}
+
+.theme_switch{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
