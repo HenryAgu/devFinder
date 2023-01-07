@@ -10,6 +10,7 @@ import { useState } from "react";
 // React icons
 import { FaSun } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 
 const DevFinder = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -36,6 +37,18 @@ const DevFinder = () => {
                 {darkMode ? <FaSun /> : <FaMoon />}
               </span>
             </div>
+          </div>
+          <div className={darkMode ? "dark_git_search" : "light_git_search"}>
+            <div className="git_search_bar">
+              <FaSearch className="search_icon"/>
+              <input type="text" placeholder="Search Github username..." />
+            </div>
+            <div className="git_search_button">
+                <button>Search</button>
+            </div>
+          </div>
+          <div className={darkMode ? "dark_git_user_content" : "light_git_user_content"}>
+                <p>Content</p>
           </div>
         </div>
       </div>
