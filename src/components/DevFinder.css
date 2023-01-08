@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 /* Dark theme code */
 .darkmode {
   color: #bdd5e4;
   height: 100vh;
   background-color: #111624;
-  /* font-family: 'Rowdies', cursive; */
+  font-family: 'Fjalla One', sans-serif;
   transition: background-color 0.25s ease-in-out;
 }
 
@@ -12,7 +13,7 @@
   color: #333;
   height: 100vh;
   background-color: whitesmoke;
-  /* font-family: 'Rowdies', cursive; */
+  font-family: 'Fjalla One', sans-serif;
   transition: background-color 0.25s ease-in-out;
 }
 
