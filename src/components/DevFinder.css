@@ -14,7 +14,7 @@
 .lightmode{
     color: #333;
     height: 100vh;
-    background-color: fff;
+    background-color: whitesmoke;
     font-family: 'Rowdies', cursive;
     transition: background-color 0.25s ease-in-out;
 }
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 150px;
+    padding-top: 50px;
 }
 
 .git_card{
@@ -90,7 +90,7 @@
     gap: 20px;
 }
 
-.search_icon{
+.search_icon,.username{
     color: #0D55AA;
 }
 
@@ -120,12 +120,75 @@
 .dark_git_user_content{
     background-color: #203053;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .light_git_user_content{
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
+}
+
+.git_user_content_card{
+    display: flex;
+    gap: 50px;
+}
+
+.git_user_image{
+}
+
+.git_user_image img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #141C2F;
+    background-color: white;
+}
+
+/* Contains the detail aspect which is the right hand of the card */
+.git_user_details{
+    width: 100%;
+    margin-top: -30px;
+}
+
+/* This contains the users bio(name and bio) */
+
+.git_user_name_and_bio{
+    display: flex;
+    flex-direction: column;
+}
+.git_user_name_and_bio h4{
+    font-size: 22px;
+}
+
+.git_user_name_and_bio p{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+/* styles the username */
+.username{
+    font-size: 12px;
+    margin-top: -15px;
+}
+
+/* This contains repo,followers and following */
+
+.git_user_repo_and_following{
+    background-color: #111624; 
+    color: #BDD5E4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.git_user_repo_and_following h3{
+    font-size: 12px;
+}
+
+.git_user_repo_and_following p{
+    margin-top: -10px;
 }

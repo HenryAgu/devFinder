@@ -12,6 +12,9 @@ import { FaSun } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 
+// Images
+import githubProfileImage from "../images/githubuserimage.svg";
+
 const DevFinder = () => {
   const [darkMode, setDarkMode] = useState(true);
   return (
@@ -48,7 +51,34 @@ const DevFinder = () => {
             </div>
           </div>
           <div className={darkMode ? "dark_git_user_content" : "light_git_user_content"}>
-                <p>Content</p>
+                <div className="git_user_content_card">
+                    <div className="git_user_image">
+                        <img src={githubProfileImage} alt="githubProfileImage" />
+                    </div>
+                    <div className="git_user_details">
+                        {/* This contains the users bio(name and bio) */}
+                        <div className="git_user_name_and_bio">
+                            <h4>No Name</h4>
+                            <span className="username">No Username</span>
+                            <p className="bio">This profile has no bio</p>
+                        </div>
+                        {/* This contains repo,followers and following */}
+                        <div className="git_user_repo_and_following">
+                            <div className="repo">
+                                <h3>Repos</h3>
+                                <p>0</p>
+                            </div>
+                            <div className="followers">
+                                <h3>Followers</h3>
+                                <p>0</p>
+                            </div>
+                            <div className="following">
+                                <h3>Following</h3>
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
           </div>
         </div>
       </div>
