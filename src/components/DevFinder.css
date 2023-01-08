@@ -1,12 +1,11 @@
-/* Rowdies Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
 
 /* Dark theme code */
 .darkmode{
     color: #BDD5E4;
     height: 100vh;
     background-color: #111624;
-    font-family: 'Rowdies', cursive;
+    /* font-family: 'Rowdies', cursive; */
     transition: background-color 0.25s ease-in-out;
 }
 
@@ -15,7 +14,7 @@
     color: #333;
     height: 100vh;
     background-color: whitesmoke;
-    font-family: 'Rowdies', cursive;
+    /* font-family: 'Rowdies', cursive; */
     transition: background-color 0.25s ease-in-out;
 }
 
@@ -191,4 +190,27 @@
 
 .git_user_repo_and_following p{
     margin-top: -10px;
+}
+
+
+.git_user_address_card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    margin: 20px;
+}
+
+.inner_address{
+    display: flex;
+    gap: 10px;
+}
+
+.inner_address p{
+    margin-top: -5px;
+    font-size: 14px;
+}
+
+.inner_address a{
+    text-decoration: none;
+    color: inherit;
 }
