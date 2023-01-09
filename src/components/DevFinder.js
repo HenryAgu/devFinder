@@ -25,7 +25,7 @@ import githubProfileImage from "../images/githubuserimage.svg";
 const DevFinder = () => {
   const [darkMode, setDarkMode] = useState(true);
   const [user, setUser] = useState("");
-  const [data, setData] = useState("")
+  const [data, setData] = useState("");
 
   const gitSubmitHandler = () => {
     //   API Get Request
@@ -48,12 +48,12 @@ const DevFinder = () => {
             <div className="logo">
               <p>devfinder</p>
             </div>
-            <div className="theme_switch">
+            <div
+              className="theme_switch"
+              onClick={() => setDarkMode(!darkMode)}
+            >
               <p>{darkMode ? "Dark" : "Light"}</p>
-              <span
-                className="inner_switch"
-                onClick={() => setDarkMode(!darkMode)}
-              >
+              <span className="inner_switch">
                 {darkMode ? <FaSun /> : <FaMoon />}
               </span>
             </div>
@@ -78,14 +78,21 @@ const DevFinder = () => {
           >
             <div className="git_user_content_card">
               <div className="git_user_image">
-                <img src={ data.avatar_url ? data.avatar_url : githubProfileImage} alt="githubProfileImage" />
+                <img
+                  src={data.avatar_url ? data.avatar_url : githubProfileImage}
+                  alt="githubProfileImage"
+                />
               </div>
               <div className="git_user_details">
                 {/* This contains the users bio(name and bio) */}
                 <div className="git_user_name_and_bio">
                   <h4>{data.name ? data.name : "No Name"}</h4>
-                  <span className="username">{data.login ? data.login : "No Username"}</span>
-                  <p className="bio">{data.bio ? data.bio : "This profile has no bio"}</p>
+                  <span className="username">
+                    {data.login ? data.login : "No Username"}
+                  </span>
+                  <p className="bio">
+                    {data.bio ? data.bio : "This profile has no bio"}
+                  </p>
                 </div>
                 {/* This contains repo,followers and following */}
                 <div className="git_user_repo_and_following">
@@ -110,11 +117,15 @@ const DevFinder = () => {
                   </div>
                   <div className="inner_address">
                     <FaTwitter />
-                    <p>{data.twitter_username ? data.twitter_username : "Not Available"}</p>
+                    <p>
+                      {data.twitter_username
+                        ? data.twitter_username
+                        : "Not Available"}
+                    </p>
                   </div>
                   <div className="inner_address">
                     <FaLink />
-                    <a href={data.blog ? data.blog : "https://search-gitname.netlify.app/"}>Blog</a>
+                    <a href={data.blog}>Blog</a>
                   </div>
                   <div className="inner_address">
                     <FaBuilding />

@@ -44,6 +44,11 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
+}
+
+.theme_switch::selection{
+  outline: none;
 }
 
 .theme_switch p {
@@ -201,11 +206,11 @@
 
 .inner_address {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
 .inner_address p {
-  margin-top: -5px;
   font-size: 14px;
 }
 
